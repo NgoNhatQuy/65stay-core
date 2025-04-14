@@ -18,7 +18,7 @@ if (!Validate::alnum($data["h_name"], 1, 50)) {
 } else if (!Validate::text_spec($data["h_address"], 1, 255)) {
     $response->message("Địa chỉ là bắt buộc");
 } else if (!Validate::text_spec($data["h_roadImages"], 1, 255)) {
-    $response->message("Đường dẫn hình ảnh đường xáxá là bắt buộc");
+    $response->message("Đường dẫn hình ảnh đường xá là bắt buộc");
 } else if (!Validate::number($data["h_emptyRoomNum"], 1, 99, 1, 2)) {
     $response->message("Số phòng trống phải là số từ 1 - 99");
 } else if (!Validate::number($data["h_totalRoomNum"], 1, 100, 1, 2)) {
